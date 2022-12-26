@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.topleft .username,
+.topleft .profession,
+.info-group-name {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family: Lora;
+    src: url("../fonts/Lora-VariableFont_wght.ttf");
+}
+
+.row-parent {
+    margin: 0 auto;
+    display: flex;
+    width: 65%;
+    box-shadow: 0 4px 10px 6px #ccc;
+}
+
+.topleft {
+    width: 230px;
+    /* box-sizing: border-box; */
+    /* height: 300px; */
+    background-color: #333;
+    padding: 24px 30px;
+    padding-bottom: 32px;
+    color: white;
+}
+
+.topleft .username {
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 1.4px;
+    padding: 10px 0;
+    font-family: Lora;
+}
+
+.topleft .profession {
+    font-size: x-large;
+}
+
+.topleft .userinfo {
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 24px auto;
+}
+
+.userinfo .icon {
+    font-size: medium;
+    text-align: center;
+    font-weight: bolder;
+    color: #959595;
+}
+
+.userinfo .info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* sideleft */
+.sideleft {
+    padding: 10px 30px;
+    width: 230px;
+    background-color: #f8f8f8;
+}
+
+.sideleft .college {
+    font-weight: bolder;
+}
+
+.sideleft div {
+    padding: 2px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 18px auto;
+    font-size: small;
+    color: #000000a7;
+}
+
+.center {
+    text-align: center;
+    color: #959595;
+}
+
+.info-group-name {
+    font-size: 22px;
+    margin: 12px 0;
+    padding-top: 30px;
+    letter-spacing: 1px;
+    font-family: Lora;
+}
+
+.skills-list {
+    padding-left: 14px;
+    color: #000000cd;
+    font-size: 15px;
+    /* font-weight: lighter; */
+    line-height: 1.4em;
+}
+
+/* main container */
+.info-main {
+    padding: 20px 36px;
+}
+
+.info-main .info-group-name {
+    padding: 0;
+}
+
+.info-main .work-field {
+    font-size: 20px;
+    padding: 4px 0;
+    font-weight: lighter;
+}
+
+.info-main .work-exp {
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.info-main .work-company {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.info-main .work-info {
+    padding: 8px 0;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    color: #6b6b6b;
+}
+
+.info-main .work-experience {
+    font-size: 14px;
+    line-height: 1.4em;
+    padding-left: 15px;
+    margin-top: 6px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .row-parent {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .row-parent,
+    .row-parent * {
+        visibility: visible;
+    }
+
+    .row-parent {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
