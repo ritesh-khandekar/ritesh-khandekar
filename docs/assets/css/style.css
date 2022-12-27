@@ -71,6 +71,10 @@ p {
     font-size: small;
     font-weight: bold;
 }
+.info a{
+    text-decoration: none;
+    color: white;
+}
 
 /* sideleft */
 .sideleft {
